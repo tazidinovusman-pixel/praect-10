@@ -15,21 +15,16 @@ body {
   font-family: var(--inter);
 }
 
-/* container */
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* font-family */
-/* global styles */
-/* header css */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
-  /* border-bottom: 1px solid #0000001A; */
 }
 
 .bottom-border {
@@ -66,9 +61,6 @@ header {
   color: red;
 }
 
-/* header css end */
-
-/* global styles */
 .common-btn {
   border-radius: 16px;
   border: none;

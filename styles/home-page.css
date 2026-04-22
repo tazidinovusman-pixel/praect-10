@@ -108,9 +108,6 @@ section.categories {
   margin-bottom: 50px;
 }
 
-/* .category-card p {} */
-
-/* recipes css */
 .recipes {
   padding-top: 183px;
   text-align: center;
@@ -262,8 +259,6 @@ body {
 
 }
 
-
-
 .recipe-card:hover {
 
     transform: translateY(-5px); 
@@ -290,17 +285,10 @@ body {
     width: 100%;
 
     height: 100%;
-/* 
-    object-fit: cover;
 
-    display: block; */
     border-radius: 24px;
 
 }
-
-
-
-
 .favorite-icon {
 
     position: absolute;
@@ -332,10 +320,6 @@ body {
     cursor: pointer;
 
 }
-
-
-
-/* Заголовок рецепта */
 
 .recipe-title {
 
@@ -391,10 +375,10 @@ body {
 
 .subscribe-box {
   background-color: #e9f6fb;
-  padding: 40px 20px;
+  padding: 60px 40px;
   border-radius: 20px;
   max-width: 1300px;
-  margin: 40px auto;
+  margin: 30px auto;
 }
 
 .subscribe-content {
@@ -409,7 +393,7 @@ body {
 .right-photo {
   width: 100px;
   height: 100px;
-  background-color: #d1e0e4;
+  background-color: #e9f6fb;
   display: flex;
   align-items: center;
   justify-content: center;

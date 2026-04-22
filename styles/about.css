@@ -6,43 +6,37 @@ h1 {
     color: #333;
 }
 
-/* Two-column layout for the content (Chef + Form) */
 .content {
     display: flex;
-    gap: 40px; /* Space between chef image and form */
-    align-items: flex-start; /* Align form content to the top */
+    gap: 40px;
+    align-items: flex-start;
 }
 
-/* --- Chef Image/Placeholder Styling --- */
 .chef-image-area {
-    width: 35%; /* Allocate space for the image area */
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .chef-placeholder {
-    /* This simulates the look of the image container */
-    width: 200px;
-    height: 300px; 
-    /* Using a linear gradient to simulate the light shading/image presence */
-    background: linear-gradient(135deg, #eee 10%, #fff 100%); 
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(3235deg, #a8edef 1%, #ffffff 100%);
     border-radius: 5px;
-    /* This simulates the chef image with the thumbs up */
-    position: relative; 
+    position: relative;
     overflow: hidden;
-    /* Optional: Add a subtle placeholder text or icon if needed */
+    padding: 10px 20px;
 }
 
-/* --- Form Styling --- */
 .contact-form {
-    width: 65%; /* Allocate space for the form */
+    width: 65%;
 }
 
 .form-group-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns for name/email/subject/enquiry */
-    gap: 20px 30px; /* Vertical and horizontal spacing */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
     margin-bottom: 20px;
 }
 
@@ -59,18 +53,18 @@ label {
     letter-spacing: 0.5px;
 }
 
-input[type="text"], 
-input[type="email"], 
+input[type="text"],
+input[type="email"],
 textarea,
 select {
     padding: 10px;
-    border: none; /* Remove default border */
-    border-bottom: 1px solid #ccc; /* Only bottom border as seen in the image */
-    background-color: transparent; /* Transparent background */
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
     font-size: 1em;
     width: 100%;
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-    outline: none; /* Remove focus outline */
+    box-sizing: border-box;
+    outline: none;
 }
 
 input::placeholder,
@@ -80,37 +74,34 @@ textarea::placeholder {
     font-size: 0.9em;
 }
 
-/* Styling for the select box to match the input fields */
+
 select {
-    appearance: none; /* Remove default arrow */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
-    /* Add a custom down arrow (can be done with background image or pseudo-element) */
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 10px;
-    padding-right: 30px; /* Space for the custom arrow */
+    padding-right: 30px;
 }
 
-
 .full-width-message {
-    grid-column: 1 / -1; /* Make the message area span two columns */
+    grid-column: 1 / -1;
     margin-bottom: 30px;
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing, but not horizontal */
+    resize: vertical;
     border: none;
-    border-bottom: 1px solid #ccc; /* Bottom border for the message box */
-    padding: 10px 0; /* Adjust padding for text area */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
 }
 
 
-/* Submit Button Styling */
 .submit-container {
-    text-align: left; /* Aligns the button container, but we'll center the button later if needed */
+    text-align: left;
     margin-top: 20px;
 }
 
